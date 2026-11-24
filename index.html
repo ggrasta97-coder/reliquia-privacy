@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliquia - Privacy Policy & Termini di Servizio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1DA1F2;
+            margin: 0;
+            padding: 24px 16px;
+            color: #2C2A29;
+            line-height: 1.6;
+        }
+        .notebook {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FDFBF7;
+            border: 2px solid #D6CBB8;
+            border-radius: 14px;
+            padding: 32px 32px 32px 48px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+            position: relative;
+        }
+        .notebook::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 32px;
+            width: 2px;
+            background-color: #E57373;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 12px;
+        }
+        .lang-btn {
+            background: #1DA1F2;
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            margin-left: 4px;
+        }
+        .lang-btn.inactive {
+            background: #E0D8C8;
+            color: #4A4642;
+        }
+        h1 {
+            color: #1565C0;
+            margin-top: 0;
+            font-size: 28px;
+        }
+        h2 {
+            color: #2E7D32;
+            font-size: 19px;
+            border-bottom: 1px solid #E0D8C8;
+            padding-bottom: 4px;
+            margin-top: 24px;
+        }
+        .badge {
+            display: inline-block;
+            background: #E3F2FD;
+            color: #1565C0;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px dashed #D6CBB8;
+            font-size: 13px;
+            color: #6D6862;
+        }
+    </style>
+</head>
+<body>
+
+<div class="notebook">
+    <div class="lang-switch">
+        <button id="btn-it" class="lang-btn" onclick="setLang('it')">Italiano</button>
+        <button id="btn-en" class="lang-btn inactive" onclick="setLang('en')">English</button>
+    </div>
+
+    <!-- VERSIONE ITALIANA -->
+    <div id="content-it">
+        <span class="badge">Ultimo aggiornamento: Novembre 2026</span>
+        <h1>Reliquia - Informativa sulla Privacy e Termini di Servizio</h1>
+        <p>Benvenuto in <strong>Reliquia - Album Collezioni</strong>. La tutela della tua privacy è al centro del funzionamento dell'applicazione: Reliquia è progettata per funzionare completamente offline e mantenere i tuoi dati esclusivamente sotto il tuo controllo.</p>
+
+        <h2>1. Raccolta e Archiviazione dei Dati (100% Locale)</h2>
+        <p><strong>Reliquia non raccoglie, non trasmette e non salva alcun dato personale su server esterni o cloud proprietari.</strong> Tutte le informazioni inserite nell'app — inclusi titoli, descrizioni, date, fotografie e coordinate GPS — vengono salvate esclusivamente nella memoria interna privata del tuo dispositivo Android.</p>
+
+        <h2>2. Autorizzazioni del Dispositivo</h2>
+        <ul>
+            <li><strong>Fotocamera:</strong> Utilizzata esclusivamente quando scegli di scattare una foto da associare a un oggetto della tua collezione. Le immagini vengono compresse e salvate localmente sul telefono.</li>
+            <li><strong>Posizione (GPS):</strong> Utilizzata esclusivamente su tua richiesta tramite il pulsante "Aggiungi Posizione" per registrare il luogo del ritrovamento e calcolare la distanza dagli oggetti salvati. I dati di posizione non vengono mai condivisi con terzi.</li>
+            <li><strong>Selettore Foto (Photo Picker):</strong> Utilizzato per permetterti di importare immagini già presenti nella tua galleria senza concedere all'app l'accesso all'intero archivio del dispositivo.</li>
+        </ul>
+
+        <h2>3. Backup ed Esportazione</h2>
+        <p>L'app offre una funzione manuale per esportare e importare i tuoi album in un archivio <code>.zip</code> locale. La custodia e la destinazione di tale file di backup sono interamente a tua discrezione.</p>
+
+        <h2>4. Termini di Servizio</h2>
+        <p>L'applicazione è fornita per uso personale di catalogazione e collezionismo. L'utente è l'unico responsabile dei contenuti (testi e immagini) inseriti nei propri album e della creazione di copie di backup periodiche prima di disinstallare l'app o cambiare dispositivo.</p>
+
+        <h2>5. Contatti</h2>
+        <p>Per qualsiasi domanda riguardante la privacy o il funzionamento di Reliquia, puoi contattare lo sviluppatore all'indirizzo email: <strong>u6188452831@id.gle</strong></p>
+    </div>
+
+    <!-- VERSIONE INGLESE -->
+    <div id="content-en" class="hidden">
+        <span class="badge">Last updated: November 2026</span>
+        <h1>Reliquia - Privacy Policy &amp; Terms of Service</h1>
+        <p>Welcome to <strong>Reliquia - Album Collezioni</strong>. Your privacy is fundamental to how the app works: Reliquia is designed to operate completely offline and keep your data exclusively under your control.</p>
+
+        <h2>1. Data Collection &amp; Storage (100% Local)</h2>
+        <p><strong>Reliquia does not collect, transmit, or store any personal data on external servers or proprietary clouds.</strong> All information entered into the app — including titles, descriptions, dates, photographs, and GPS coordinates — is stored exclusively within the private internal storage of your Android device.</p>
+
+        <h2>2. Device Permissions</h2>
+        <ul>
+            <li><strong>Camera:</strong> Used solely when you choose to take a photo to attach to a collectible item. Images are compressed and saved locally on your phone.</li>
+            <li><strong>Location (GPS):</strong> Used solely at your explicit request via the "Add Location" button to record the discovery spot and calculate distances to saved items. Location data is never shared with third parties.</li>
+            <li><strong>Android Photo Picker:</strong> Used to let you select existing images from your gallery without granting the app broad access to your device storage.</li>
+        </ul>
+
+        <h2>3. Backup &amp; Export</h2>
+        <p>The app provides a manual feature to export and import your albums as a local <code>.zip</code> archive. The storage and destination of this backup file are entirely under your control.</p>
+
+        <h2>4. Terms of Service</h2>
+        <p>The application is provided for personal cataloging and collecting purposes. You are solely responsible for the content (texts and images) saved in your albums and for creating regular backups before uninstalling the app or switching devices.</p>
+
+        <h2>5. Contact</h2>
+        <p>For any questions regarding privacy or Reliquia, please contact the developer at: <strong>u6188452831@id.gle</strong></p>
+    </div>
+
+    <footer>
+        &copy; 2026 Reliquia - Album Collezioni. All rights reserved.
+    </footer>
+</div>
+
+<script>
+    function setLang(lang) {
+        document.getElementById('content-it').classList.toggle('hidden', lang !== 'it');
+        document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+        document.getElementById('btn-it').classList.toggle('inactive', lang !== 'it');
+        document.getElementById('btn-en').classList.toggle('inactive', lang !== 'en');
+    }
+</script>
+
+</body>
+</html>
